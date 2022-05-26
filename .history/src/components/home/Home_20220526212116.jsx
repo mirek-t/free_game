@@ -4,6 +4,7 @@ import GameList from "../gameList/GameList";
 function Home() {
   return (
     <>
+      <Filters />
       <GameList />
     </>
   );
