@@ -1,3 +1,5 @@
+import logo from './logo.svg';
+import ReactDOM from "react-dom/client";
 import {
   BrowserRouter,
   Routes,
@@ -5,15 +7,14 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import Home from "./components/home/Home";
 
 function App() {
   return (
 
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/games/:id" element={<h1>Games</h1>}/>
+      <Route path="/home" element={<App />}/>
+      <Route path="/games/:id" element={<App />}/>
 
     </Routes>
   </BrowserRouter>
